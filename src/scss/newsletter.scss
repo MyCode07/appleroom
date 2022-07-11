@@ -1,0 +1,102 @@
+.newsletter {
+    margin-top: 70px;
+    // .newsletter__container
+
+    &__container {
+        position: relative;
+        background-color: #1e1e1e;
+    }
+
+    // .newsletter__body
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 18px 0 31px 0;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 50px 0;
+        }
+    }
+
+    // .newsletter__image
+
+    &__image {
+        @include adaptive-value("margin-right", 183, -50, 1);
+        @media (max-width: 768px) {
+            margin-bottom: 30px;
+            margin-right: 0 !important;
+        }
+
+        // .newsletter__image-image
+
+        &-image {
+            position: relative;
+            z-index: 1;
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+        }
+
+        // .newsletter__image-background
+
+        &-background {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 0;
+            @media (max-width: 500px) {
+                width: 100%;
+            }
+        }
+    }
+
+    // .newsletter__content
+
+    &__content {
+        max-width: 290px;
+    }
+
+    // .newsletter__title
+
+    &__title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        @include adaptive-value("font-size", 22, 20, 1);
+        @include adaptive-value("margin-bottom", 34, 40, 1);
+        line-height: 130%;
+        color: #ffffff;
+    }
+
+    // .newsletter__form
+
+    &__form {
+        position: relative;
+        border-radius: 5px;
+        overflow: hidden;
+        background-color: #fff;
+        padding: 8px 51px 9px 16px;
+
+        input {
+            width: 100%;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 130%;
+            color: $color93;
+        }
+
+        button {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+    }
+}
+

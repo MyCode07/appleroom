@@ -1,0 +1,108 @@
+.blog {
+    // .blog__container
+
+    &__container {
+    }
+
+    // .blog__body
+
+    &__body {
+    }
+
+    // .blog__title
+
+    &__title {
+    }
+
+    // .blog__slider
+
+    &__slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        // .blog__slider-prev
+
+        &-prev {
+            margin-right: 37px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease 0s;
+
+            @media (any-hover: hover) {
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            img {
+                pointer-events: none;
+            }
+        }
+
+        // .blog__slider-swiper
+
+        &-swiper {
+        }
+
+        // .blog__slider-wrapper
+
+        &-wrapper {
+        }
+
+        // .blog__slider-slide
+
+        &-slide {
+            max-width: 415px;
+
+            // .blog__slider-slide-body
+
+            &-body {
+            }
+
+            // .blog__slider-slide-image
+
+            &-image {
+                display: block;
+                margin-bottom: 26px;
+                max-width: 100%;
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            // .blog__slider-slide-title
+
+            &-title {
+                display: block;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 130%;
+                color: $color2c;
+            }
+        }
+
+        // .blog__slider-next
+
+        &-next {
+            margin-left: 37px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease 0s;
+
+            @media (any-hover: hover) {
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            img {
+                pointer-events: none;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

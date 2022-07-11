@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .header,
+        .home__slider {
+            background-image: url('img/black-metal-background.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .newsletter__container {
+            background-image: url('img/black-metal-background-dark-metal-texture2.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+    <link href="http://fonts.cdnfonts.com/css/inter" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/comfortaa" rel="stylesheet">
+    <link rel="stylesheet" href="files/swiper.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="mobile__menu">
+        <div class="mobile__menu-overlay"></div>
+        <div class="mobile__menu-body">
+            <button class="mobile__menu-close">
+                <img src="img/svg/cross 1.svg" alt="">
+            </button>
+            <nav class="mobile__menu-menu">
+                <ul>
+                    <li>
+                        <a href="">О компании</a>
+                    </li>
+                    <li>
+                        <a href="">Доставка и оплата </a>
+                    </li>
+                    <li>
+                        <a href="">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile__menu-actions">
+                <a href="" class="mobile__menu-compare">
+                    <img src="img/svg/black-compare.svg" alt="">
+                    <span>Сравнить</span>
+                </a>
+                <a href="" class="mobile__menu-basket">
+                    <img src="img/svg/basket-black-1.svg" alt="">
+                    <span>Корзина</span>
+                </a>
+                <a href="" class="mobile__menu-account">
+                    <img src="img/svg/acc-black-1.svg" alt="">
+                    <span>Личный кабинет</span>
+                </a>
+            </div>
+            <ul class="mobile__menu-socials">
+                <li class="mobile__menu-socials-item">
+                    <a href="">
+                        <img src="img/svg/telegram_logo_icon.svg" alt="">
+                    </a>
+                </li>
+                <li class="mobile__menu-socials-item">
+                    <a href="">
+                        <img src="img/svg/vk_icon.svg" alt="">
+                    </a>
+                </li>
+                <li class="mobile__menu-socials-item">
+                    <a href="">
+                        <img src="img/svg/whatsapp1.svg" alt="">
+                    </a>
+                </li>
+                <li class="mobile__menu-socials-item _avito-black">
+                    <a href="">
+                        <img src="img/svg/Avito-logo-black-1.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <header id="header" class="header">
+        <div class="header__container _container">
+            <div class="header__body">
+                <div class="header__top">
+                    <div class="header__location">
+                        <img src="img/svg/location1.svg" alt="">
+                        <span>Екатеринбург</span>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__menu-body">
+                            <li class="header__menu-item">
+                                <a href="" class="header__menu-link">О компании</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="" class="header__menu-link">Доставка и оплата</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="" class="header__menu-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="header__socials">
+                        <li class="header__socials-item">
+                            <a href="">
+                                <img src="img/svg/telegram_logo_icon.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="header__socials-item">
+                            <a href="">
+                                <img src="img/svg/vk_icon.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="header__socials-item">
+                            <a href="">
+                                <img src="img/svg/whatsapp1.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="header__socials-item">
+                            <a href="">
+                                <img src="img/svg/Avito-logo1.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="tel:+79221699595" class="header__phone">
+                        <img src="img/svg/telephone.svg" alt="">
+                        <span>+79221699595</span>
+                    </a>
+                    <button class="header__burger">
+                        <img src="img/svg/burger-w.svg" alt="">
+                    </button>
+                </div>
+                <div class="header__bottom">
+                    <div class="header__bottom-left">
+                        <a href="/" class="header__logo">
+                            <img src="img/svg/logo1.svg" alt="">
+                        </a>
+                        <div class="header__catalog">
+                            <img src="img/svg/burger-w.svg" alt="">
+                            <span>Каталог</span>
+                        </div>
+                    </div>
+                    <div class="header__bottom-right">
+                        <div class="header__search">
+                            <input type="text" placeholder="Поиск по сайту">
+                            <button>
+                                <img src="img/svg/search1.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="header__actions">
+                            <a href="" class="header__compare">
+                                <img src="img/svg/compare1.svg" alt="">
+                                <span>Сравнить</span>
+                            </a>
+                            <a href="" class="header__basket">
+                                <img src="img/svg/basket_9.svg" alt="">
+                                <span>Корзина</span>
+                            </a>
+                            <a href="" class="header__account">
+                                <img src="img/svg/acc.svg" alt="">
+                                <span>Личный кабинет</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="page">
+        <section class="home__slider">
+            <div class="home__slider-swiper swiper">
+                <div class="home__slider-wrapper swiper-wrapper">
+                    <article class="home__slider-slider swiper-slide slide">
+                        <div class="slide__body _container">
+                            <div class="slide__thumbs">
+                                <div class="slide__thumbs-image">
+                                    <img src="img/iphone-mini-side.png" alt="">
+                                </div>
+                                <div class="slide__thumbs-image">
+                                    <img src="img/iphone-mini-back.png" alt="">
+                                </div>
+                                <div class="slide__thumbs-image">
+                                    <img src="img/iphone-mini-frontback.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slide__main">
+                                <div class="slide__main-content">
+                                    <h3 class="slide__main-title">Смартфон Apple iPhone 13
+                                        Pro Max 128GB Sierra Blue
+                                        (Небесно голубой)</h3>
+                                    <span class="slide__main-price">
+                                        <del>
+                                            <bdi>102 990 руб</bdi>
+                                        </del>
+                                        <ins>
+                                            <bdi>102 990 руб</bdi>
+                                        </ins>
+                                    </span>
+                                </div>
+                                <div class="slide__main-image">
+                                    <img src="img/iphone-big.png" class="slide__main-image-img" alt="">
+                                    <img src="img/svg/elips.svg" class="slide__main-image-background" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="home__slider-slider swiper-slide slide">
+                        <div class="slide__body _container">
+                            <div class="slide__thumbs">
+                                <div class="slide__thumbs-image">
+                                    <img src="img/iphone-mini-side.png" alt="">
+                                </div>
+                                <div class="slide__thumbs-image">
+                                    <img src="img/iphone-mini-back.png" alt="">
+                                </div>
+                                <div class="slide__thumbs-image">
+                                    <img src="img/iphone-mini-frontback.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slide__main">
+                                <div class="slide__main-content">
+                                    <h3 class="slide__main-title">Смартфон Apple iPhone 13
+                                        Pro Max 128GB Sierra Blue
+                                        (Небесно голубой)</h3>
+                                    <span class="slide__main-price">
+                                        <del>
+                                            <bdi>102 990 руб</bdi>
+                                        </del>
+                                        <ins>
+                                            <bdi>102 990 руб</bdi>
+                                        </ins>
+                                    </span>
+                                </div>
+                                <div class="slide__main-image">
+                                    <img src="img/iphone-big.png" class="slide__main-image-img" alt="">
+                                    <img src="img/svg/elips.svg" class="slide__main-image-background" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="home__slider-slider swiper-slide slide">
+                        <div class="slide__body _container">
+                            <div class="slide__thumbs">
+                                <div class="slide__thumbs-image">
+                                    <img src="img/iphone-mini-side.png" alt="">
+                                </div>
+                                <div class="slide__thumbs-image">
+                                    <img src="img/iphone-mini-back.png" alt="">
+                                </div>
+                                <div class="slide__thumbs-image">
+                                    <img src="img/iphone-mini-frontback.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slide__main">
+                                <div class="slide__main-content">
+                                    <h3 class="slide__main-title">Смартфон Apple iPhone 13
+                                        Pro Max 128GB Sierra Blue
+                                        (Небесно голубой)</h3>
+                                    <span class="slide__main-price">
+                                        <del>
+                                            <bdi>102 990 руб</bdi>
+                                        </del>
+                                        <ins>
+                                            <bdi>102 990 руб</bdi>
+                                        </ins>
+                                    </span>
+                                </div>
+                                <div class="slide__main-image">
+                                    <img src="img/iphone-big.png" class="slide__main-image-img" alt="">
+                                    <img src="img/svg/elips.svg" class="slide__main-image-background" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="home__slider-pagination"></div>
+            </div>
+        </section>
+        <section class="new">
+            <div class="new__container _container">
+                <div class="new__body">
+                    <h2 class="new__title _section-title">Новинки</h2>
+                    <div class="new__slider _main-slider">
+                        <button class="new__slider-prev _main-slider__prev">
+                            <img src="img/svg/slider-arrow.svg" alt="">
+                        </button>
+                        <div class="new__slider-swiper swiper _main-slider__swiper">
+                            <div class="new__slider-wrapper swiper-wrapper _main-slider__wrapper">
+                                <article class="new__slider-slide swiper-slide _main-slider__slide _main-slide">
+                                    <div class="_main-slide__body">
+                                        <a href="" class="_main-slide__image">
+                                            <img src="img/iphone-pink.png" alt="">
+                                        </a>
+                                        <a href="" class="_main-slide__compare">
+                                            <img src="img/svg/black-compare.svg" alt="">
+                                        </a>
+                                        <div class="_main-slide__content">
+                                            <h4 class="_main-slide__title">Смартфон Apple iPhone 13 Pro Max
+                                                128GB Sierra Blue (Небесно голубой)</h4>
+                                            <div class="_main-slide__stock">В наличии <span>16</span></div>
+                                            <span class="_main-slide__price">
+                                                <ins>
+                                                    <bdi>102 990 руб</bdi>
+                                                </ins>
+                                                <del>
+                                                    <bdi>102 990 руб</bdi>
+                                                </del>
+                                            </span>
+                                            <div class="_main-slide__buttons">
+                                                <button class="add-to-cart">В корзину</button>
+                                                <button class="buy-now">Купить сейчас</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="new__slider-slide swiper-slide _main-slider__slide _main-slide">
+                                    <div class="_main-slide__body">
+                                        <a href="" class="_main-slide__image">
+                                            <img src="img/iphone-pink.png" alt="">
+                                        </a>
+                                        <a href="" class="_main-slide__compare">
+                                            <img src="img/svg/black-compare.svg" alt="">
+                                        </a>
+                                        <div class="_main-slide__content">
+                                            <h4 class="_main-slide__title">Смартфон Apple iPhone 13 Pro Max
+                                                128GB Sierra Blue (Небесно голубой)</h4>
+                                            <div class="_main-slide__stock">В наличии <span>16</span></div>
+                                            <span class="_main-slide__price">
+                                                <ins>
+                                                    <bdi>102 990 руб</bdi>
+                                                </ins>
+                                                <del>
+                                                    <bdi>102 990 руб</bdi>
+                                                </del>
+                                            </span>
+                                            <div class="_main-slide__buttons">
+                                                <button class="add-to-cart">В корзину</button>
+                                                <button class="buy-now">Купить сейчас</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="new__slider-slide swiper-slide _main-slider__slide _main-slide">
+                                    <div class="_main-slide__body">
+                                        <a href="" class="_main-slide__image">
+                                            <img src="img/iphone-pink.png" alt="">
+                                        </a>
+                                        <a href="" class="_main-slide__compare">
+                                            <img src="img/svg/black-compare.svg" alt="">
+                                        </a>
+                                        <div class="_main-slide__content">
+                                            <h4 class="_main-slide__title">Смартфон Apple iPhone 13 Pro Max
+                                                128GB Sierra Blue (Небесно голубой)</h4>
+                                            <div class="_main-slide__stock">В наличии <span>16</span></div>
+                                            <span class="_main-slide__price">
+                                                <ins>
+                                                    <bdi>102 990 руб</bdi>
+                                                </ins>
+                                                <del>
+                                                    <bdi>102 990 руб</bdi>
+                                                </del>
+                                            </span>
+                                            <div class="_main-slide__buttons">
+                                                <button class="add-to-cart">В корзину</button>
+                                                <button class="buy-now">Купить сейчас</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="new__slider-slide swiper-slide _main-slider__slide _main-slide">
+                                    <div class="_main-slide__body">
+                                        <a href="" class="_main-slide__image">
+                                            <img src="img/iphone-pink.png" alt="">
+                                        </a>
+                                        <a href="" class="_main-slide__compare">
+                                            <img src="img/svg/black-compare.svg" alt="">
+                                        </a>
+                                        <div class="_main-slide__content">
+                                            <h4 class="_main-slide__title">Смартфон Apple iPhone 13 Pro Max
+                                                128GB Sierra Blue (Небесно голубой)</h4>
+                                            <div class="_main-slide__stock">В наличии <span>16</span></div>
+                                            <span class="_main-slide__price">
+                                                <ins>
+                                                    <bdi>102 990 руб</bdi>
+                                                </ins>
+                                                <del>
+                                                    <bdi>102 990 руб</bdi>
+                                                </del>
+                                            </span>
+                                            <div class="_main-slide__buttons">
+                                                <button class="add-to-cart">В корзину</button>
+                                                <button class="buy-now">Купить сейчас</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <button class="new__slider-next _main-slider__next">
+                            <img src="img/svg/slider-arrow.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="popular">
+            <div class="popular__container _container">
+                <div class="popular__body">
+                    <h2 class="popular__title _section-title">Новинки</h2>
+                    <div class="popular__slider _main-slider">
+                        <button class="popular__slider-prev _main-slider__prev">
+                            <img src="img/svg/slider-arrow.svg" alt="">
+                        </button>
+                        <div class="popular__slider-swiper swiper _main-slider__swiper">
+                            <div class="popular__slider-wrapper swiper-wrapper _main-slider__wrapper">
+                                <article class="popular__slider-slide swiper-slide _main-slider__slide _main-slide">
+                                    <div class="_main-slide__body">
+                                        <a href="" class="_main-slide__image">
+                                            <img src="img/iphone-pink.png" alt="">
+                                        </a>
+                                        <a href="" class="_main-slide__compare">
+                                            <img src="img/svg/black-compare.svg" alt="">
+                                        </a>
+                                        <div class="_main-slide__content">
+                                            <h4 class="_main-slide__title">Смартфон Apple iPhone 13 Pro Max
+                                                128GB Sierra Blue (Небесно голубой)</h4>
+                                            <div class="_main-slide__stock">В наличии <span>16</span></div>
+                                            <span class="_main-slide__price">
+                                                <ins>
+                                                    <bdi>102 990 руб</bdi>
+                                                </ins>
+                                                <del>
+                                                    <bdi>102 990 руб</bdi>
+                                                </del>
+                                            </span>
+                                            <div class="_main-slide__buttons">
+                                                <button class="add-to-cart">В корзину</button>
+                                                <button class="buy-now">Купить сейчас</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="popular__slider-slide swiper-slide _main-slider__slide _main-slide">
+                                    <div class="_main-slide__body">
+                                        <a href="" class="_main-slide__image">
+                                            <img src="img/iphone-pink.png" alt="">
+                                        </a>
+                                        <a href="" class="_main-slide__compare">
+                                            <img src="img/svg/black-compare.svg" alt="">
+                                        </a>
+                                        <div class="_main-slide__content">
+                                            <h4 class="_main-slide__title">Смартфон Apple iPhone 13 Pro Max
+                                                128GB Sierra Blue (Небесно голубой)</h4>
+                                            <div class="_main-slide__stock">В наличии <span>16</span></div>
+                                            <span class="_main-slide__price">
+                                                <ins>
+                                                    <bdi>102 990 руб</bdi>
+                                                </ins>
+                                                <del>
+                                                    <bdi>102 990 руб</bdi>
+                                                </del>
+                                            </span>
+                                            <div class="_main-slide__buttons">
+                                                <button class="add-to-cart">В корзину</button>
+                                                <button class="buy-now">Купить сейчас</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="popular__slider-slide swiper-slide _main-slider__slide _main-slide">
+                                    <div class="_main-slide__body">
+                                        <a href="" class="_main-slide__image">
+                                            <img src="img/iphone-pink.png" alt="">
+                                        </a>
+                                        <a href="" class="_main-slide__compare">
+                                            <img src="img/svg/black-compare.svg" alt="">
+                                        </a>
+                                        <div class="_main-slide__content">
+                                            <h4 class="_main-slide__title">Смартфон Apple iPhone 13 Pro Max
+                                                128GB Sierra Blue (Небесно голубой)</h4>
+                                            <div class="_main-slide__stock">В наличии <span>16</span></div>
+                                            <span class="_main-slide__price">
+                                                <ins>
+                                                    <bdi>102 990 руб</bdi>
+                                                </ins>
+                                                <del>
+                                                    <bdi>102 990 руб</bdi>
+                                                </del>
+                                            </span>
+                                            <div class="_main-slide__buttons">
+                                                <button class="add-to-cart">В корзину</button>
+                                                <button class="buy-now">Купить сейчас</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="popular__slider-slide swiper-slide _main-slider__slide _main-slide">
+                                    <div class="_main-slide__body">
+                                        <a href="" class="_main-slide__image">
+                                            <img src="img/iphone-pink.png" alt="">
+                                        </a>
+                                        <a href="" class="_main-slide__compare">
+                                            <img src="img/svg/black-compare.svg" alt="">
+                                        </a>
+                                        <div class="_main-slide__content">
+                                            <h4 class="_main-slide__title">Смартфон Apple iPhone 13 Pro Max
+                                                128GB Sierra Blue (Небесно голубой)</h4>
+                                            <div class="_main-slide__stock">В наличии <span>16</span></div>
+                                            <span class="_main-slide__price">
+                                                <ins>
+                                                    <bdi>102 990 руб</bdi>
+                                                </ins>
+                                                <del>
+                                                    <bdi>102 990 руб</bdi>
+                                                </del>
+                                            </span>
+                                            <div class="_main-slide__buttons">
+                                                <button class="add-to-cart">В корзину</button>
+                                                <button class="buy-now">Купить сейчас</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <button class="popular__slider-next _main-slider__next">
+                            <img src="img/svg/slider-arrow.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="newsletter">
+            <div class="newsletter__container _container">
+                <div class="newsletter__body">
+                    <div class="newsletter__image">
+                        <img class="newsletter__image-background" src="img/svg/polukrug.svg" alt="">
+                        <img class="newsletter__image-image" src="img/tradein_multi.png" alt="">
+                    </div>
+                    <div class="newsletter__content">
+                        <h2 class="newsletter__title">Хотите первым узнать о новинках и акциях?</h2>
+                        <div class="newsletter__form">
+                            <input type="text" placeholder="Подпишитесь на нашу рассылку">
+                            <button>
+                                <img src="img/svg/email.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="advantages__container _container">
+                <div class="advantages__body">
+                    <h2 class="advantages__title _section-title _section-title-mb">Наши преимущества</h2>
+                    <div class="advantages__flex">
+                        <div class="advantages__flex-item">
+                            <div class="advantages__flex-item-image">
+                                <img src="img/svg/kluch1.svg" alt="">
+                            </div>
+                            <p class="advantages__flex-item-description">Только оригинальная продукция</p>
+                        </div>
+                        <div class="advantages__flex-item">
+                            <div class="advantages__flex-item-image">
+                                <img src="img/svg/money1.svg" alt="">
+                            </div>
+                            <p class="advantages__flex-item-description">Самые низкие цены на рынке</p>
+                        </div>
+                        <div class="advantages__flex-item">
+                            <div class="advantages__flex-item-image">
+                                <img src="img/svg/mashina1.svg" alt="">
+                            </div>
+                            <p class="advantages__flex-item-description">Доставка в любой город РФ СДЭК</p>
+                        </div>
+                        <div class="advantages__flex-item">
+                            <div class="advantages__flex-item-image">
+                                <img src="img/svg/ccart1.svg" alt="">
+                            </div>
+                            <p class="advantages__flex-item-description">Оплата картой</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blog">
+            <div class="blog__container _container">
+                <div class="blog__body">
+                    <h2 class="blog__title _section-title _section-title-mb">Наш блог</h2>
+                    <div class="blog__slider">
+                        <button class="blog__slider-prev">
+                            <img src="img/svg/slider-arrow.svg" alt="">
+                        </button>
+                        <div class="blog__slider-swiper swiper">
+                            <div class="blog__slider-wrapper swiper-wrapper">
+                                <article class="blog__slider-slide swiper-slide">
+                                    <div class="blog__slider-slide-body">
+                                        <a href="" class="blog__slider-slide-image">
+                                            <img src="img/post1.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <h4 class="blog__slider-slide-title">Смартфон Apple iPhone 13 Pro Max
+                                                128GB Sierra Blue (Небесно голубой)</h4>
+                                        </a>
+                                    </div>
+                                </article>
+                                <article class="blog__slider-slide swiper-slide">
+                                    <div class="blog__slider-slide-body">
+                                        <a href="" class="blog__slider-slide-image">
+                                            <img src="img/post2.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <h4 class="blog__slider-slide-title">Смартфон Apple iPhone 13 Pro Max
+                                                128GB Sierra Blue (Небесно голубой)</h4>
+                                        </a>
+                                    </div>
+                                </article>
+                                <article class="blog__slider-slide swiper-slide">
+                                    <div class="blog__slider-slide-body">
+                                        <a href="" class="blog__slider-slide-image">
+                                            <img src="img/post3.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <h4 class="blog__slider-slide-title">Смартфон Apple iPhone 13 Pro Max
+                                                128GB Sierra Blue (Небесно голубой)</h4>
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <button class="blog__slider-next">
+                            <img src="img/svg/slider-arrow.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__conteiner _container">
+            <div class="footer__body">
+                <div class="footer__main">
+                    <a href="/" class="footer__logo">
+                        <img src="img/svg/logo1.svg" alt="">
+                    </a>
+                    <p class="footer__descr">Интернет-магазин оригинальной техники Apple</p>
+                    <span class="footer__copyright">Copyright © 2022</span>
+                </div>
+                <nav class="footer__menu">
+                    <h4 class="footer__menu-title">Покупателям</h4>
+                    <ul class="footer__menu-body">
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">О компании</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">Оплата</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">Доставка</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="footer__contacts">
+                    <h4 class="footer__menu-title">Связаться с нами</h4>
+                    <ul class="footer__menu-body">
+                        <li class="footer__menu-item">
+                            <span>Телефон:</span>
+                            <a href="tel:+79221699595" class="footer__menu-link">+79221699595</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <span>Почта:</span>
+                            <a href="mailto:appleroom@internet.ru" class="footer__menu-link">appleroom@internet.ru</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="footer__socials">
+                    <h4 class="footer__menu-title">Мы в соц. сетях</h4>
+                    <ul class="footer__socials-body">
+                        <li class="footer__socials-item">
+                            <a href="">
+                                <img src="img/svg/telegram_logo_icon.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="footer__socials-item">
+                            <a href="">
+                                <img src="img/svg/vk_icon.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="footer__socials-item">
+                            <a href="">
+                                <img src="img/svg/whatsapp1.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="footer__socials-item">
+                            <a href="">
+                                <img src="img/svg/Avito-logo1.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__payment">
+                    <h4 class="footer__menu-title">Способы оплаты</h4>
+                    <div class="footer__payment-body">
+                        <img src="img/svg/visa1.svg" alt="">
+                        <img src="img/svg/mcard1.svg" alt="">
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <script src="files/swiper.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
+
+git branch -M main
+git push -u origin main
