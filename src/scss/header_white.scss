@@ -1,0 +1,60 @@
+.header__white {
+    background-image: unset !important;
+    background-color: #fff;
+
+    .header__top {
+        background-color: #f2f2f2;
+    }
+
+    .header__location {
+        color: #000;
+    }
+
+    .header__menu-link {
+        color: #000;
+    }
+
+    .header__phone {
+        color: #000;
+    }
+
+    .header__search {
+        background-color: #f2f2f2;
+    }
+
+    .header__basket {
+        color: #000;
+    }
+
+    .header__compare {
+        color: #000;
+    }
+
+    .header__account {
+        color: #000;
+    }
+}
+
+.breadcamps {
+    @include adaptive-value("margin-top", 40, 30, 1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    & > :not(:last-child) {
+        color: $colorc2;
+    }
+
+    & > :last-child {
+        color: $color27;
+    }
+
+    & > :not(:first-child) {
+        &:before {
+            content: "/";
+            margin-right: 4px;
+            margin-left: 4px;
+        }
+    }
+}

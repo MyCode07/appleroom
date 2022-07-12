@@ -24,7 +24,7 @@
         border-radius: 5px;
         background-color: $color27;
         @include adaptive-value("margin-bottom", 28, 30, 1);
-        @media (max-width:992px){
+        @media (max-width: 992px) {
             justify-content: space-between;
         }
     }
@@ -210,6 +210,11 @@
             margin-right: 10px;
         }
 
+        img,
+        span {
+            pointer-events: none;
+        }
+
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
@@ -316,5 +321,3 @@
         display: none;
     }
 }
-
-
