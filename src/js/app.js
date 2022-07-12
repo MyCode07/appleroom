@@ -73,12 +73,17 @@ document.addEventListener('DOMContentLoaded', function (e) {
             document.querySelector('.categories').classList.remove('_open');
         }
 
-        if (targetEl.classList.contains('open-submenu')) {
-            let menu = targetEl.closest('.categories__menu');
-            menu.querySelector('.categories__menu-link').classList.toggle('_active');
-            menu.querySelector('.categories__submenu').classList.toggle('_active');
-            targetEl.classList.toggle('_active');
+        if (targetEl.classList.contains('catalog__open-sidebar')) {
+            document.querySelector('.sidebar').classList.add('_open');
+            document.querySelector('body').classList.add('_noscroll');
+
         }
+
+        if (targetEl.classList.contains('sidebar__close')) {
+            document.querySelector('.sidebar').classList.remove('_open');
+            document.querySelector('body').classList.remove('_noscroll');
+        }
+
     })
 
 
@@ -95,17 +100,36 @@ document.addEventListener('DOMContentLoaded', function (e) {
                 let menuTitle = menu.querySelector('.categories__menu-link');
                 menuTitle.insertAdjacentHTML('afterend', arrow);
             }
+            menu.addEventListener('click', function (e) {
+                if (e.target.classList.contains('open-submenu')) {
+                    menu.querySelector('.categories__menu-link').classList.toggle('_active');
+                    submenu.classList.toggle('_active');
+                    e.target.classList.toggle('_active');
+                }
+            })
+        })
+    }
+
+    let catalogMenus = document.querySelectorAll('.sidebar__menu');
+    if (catalogMenus) {
+        catalogMenus.forEach(menu => {
+            let submenu = menu.querySelector('.sidebar__submenu');
+            if (submenu) {
+                let menuTitle = menu.querySelector('.sidebar__menu-link');
+                menuTitle.insertAdjacentHTML('afterend', arrow);
+            }
+
+            menu.addEventListener('click', function (e) {
+                if (e.target.classList.contains('open-submenu')) {
+                    menu.querySelector('.sidebar__menu-link').classList.toggle('_active');
+                    submenu.classList.toggle('_active');
+                    e.target.classList.toggle('_active');
+                }
+            })
         })
     }
 })
 
 const arrow = `<svg class="open-submenu" width="18" height="10" viewBox="0 0 18 10" fill="none">
-<g clip-path="url(#clip0_59_1740)">
 <path d="M0.193859 0.364268C0.441921 0.116206 0.845022 0.116206 1.09308 0.364268L9.00006 8.28675L16.9225 0.364269C17.1706 0.116207 17.5737 0.116207 17.8218 0.364269C18.0698 0.612331 18.0698 1.01543 17.8218 1.26349L9.46518 9.62008C9.34115 9.74412 9.18611 9.80613 9.01556 9.80613C8.86053 9.80613 8.68998 9.74412 8.56595 9.62008L0.209364 1.26349C-0.0542031 1.01543 -0.0542031 0.61233 0.193859 0.364268Z"/>
-</g>
-<defs>
-<clipPath id="clip0_59_1740">
-<rect width="18" height="10" fill="white" transform="matrix(-1 -8.74228e-08 -8.74228e-08 1 18 0)"/>
-</clipPath>
-</defs>
 </svg>`;
