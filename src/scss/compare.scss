@@ -1,0 +1,387 @@
+.compare {
+    // .compare__container
+
+    &__container {
+    }
+
+    // .compare__body
+
+    &__body {
+    }
+
+    // .compare__top
+
+    &__top {
+        display: flex;
+        align-items: center;
+        @include adaptive-value("margin-top", 30, 26, 1);
+        @include adaptive-value("margin-bottom", 50, 36, 1);
+
+        h1 {
+            margin: 0;
+        }
+
+        span {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 130%;
+            color: $colorc2;
+            @include adaptive-value("padding-left", 12, 20, 1);
+        }
+    }
+
+    // .compare__title
+
+    &__title {
+    }
+
+    // .compare__table
+
+    &__table {
+        border: 1px solid $colorc2;
+        border-right: none;
+        // .compare__table-header
+
+        &-header {
+            font-weight: 500 !important;
+            font-size: 18px !important;
+            @include adaptive-value("padding-left", 20, 10, 1);
+            @include adaptive-value("padding-right", 20, 10, 1);
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid $colorc2;
+            border-right: 1px solid $colorc2;
+        }
+
+        div {
+            font-style: normal;
+            font-weight: 400;
+            @include adaptive-value("font-size", 14, 12, 1);
+            line-height: 130%;
+            color: $color2c;
+        }
+
+        // .compare__table-body
+
+        &-body {
+            display: flex;
+            overflow-x: auto;
+        }
+
+        // .compare__table-aside
+
+        &-aside {
+            flex: 0 0 255px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            @include adaptive-value("flex-basis", 255, 102, 1);
+        }
+
+        // .compare__table-main
+
+        &-main {
+            flex: 1 1 auto;
+            display: flex;
+        }
+
+        // .compare__table-product
+
+        &-product {
+            flex: 1 1 50%;
+            max-width: 50%;
+            min-width: 210px;
+        }
+    }
+
+    .product__buttons {
+        padding: 0 !important;
+        max-width: 260px;
+
+        @media (max-width: 660px) {
+            grid-template-columns: 1fr;
+            & > :first-child {
+                margin-bottom: 10px;
+                margin-right: 0 !important;
+            }
+        }
+
+        button {
+            @include adaptive-value("font-size", 14, 12, 1);
+        }
+    }
+}
+
+.aside-product {
+    border-right: 1px solid $colorc2;
+
+    & > :not(:last-child) {
+        border-bottom: 1px solid $colorc2;
+    }
+
+    div {
+        @include adaptive-value("padding-left", 20, 6, 1);
+        @include adaptive-value("padding-right", 20, 6, 1);
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    // .aside-product__name
+
+    &__name {
+    }
+
+    // .aside-product__image
+
+    &__image {
+    }
+
+    // .aside-product__price
+
+    &__price {
+    }
+
+    // .aside-product__manufacturer
+
+    &__manufacturer {
+    }
+
+    // .aside-product__stock
+
+    &__stock {
+    }
+
+    // .aside-product__date
+
+    &__date {
+    }
+
+    // .aside-product__platform
+
+    &__platform {
+    }
+
+    // .aside-product__version
+
+    &__version {
+    }
+
+    // .aside-product__screen
+
+    &__screen {
+    }
+
+    // .aside-product__opmemory
+
+    &__opmemory {
+    }
+
+    // .aside-product__mainmemory
+
+    &__mainmemory {
+    }
+
+    // .aside-product__maincamera
+
+    &__maincamera {
+    }
+
+    // .aside-product__maincamerapx
+
+    &__maincamerapx {
+    }
+
+    // .aside-product__maxvideopx
+
+    &__maxvideopx {
+    }
+
+    // .aside-product__cameramoduls
+
+    &__cameramoduls {
+    }
+
+    // .aside-product__cpumanufacotor
+
+    &__cpumanufacotor {
+    }
+
+    // .aside-product__cpu
+
+    &__cpu {
+    }
+
+    // .aside-product__height
+
+    &__height {
+    }
+
+    // .aside-product__width
+
+    &__width {
+    }
+
+    // .aside-product__thickness
+
+    &__thickness {
+    }
+
+    // .aside-product__weight
+
+    &__weight {
+    }
+
+    // .aside-product__еquipment
+
+    &__еquipment {
+    }
+
+    // .aside-product__warranty
+
+    &__warranty {
+    }
+
+    // .aside-product__empty
+
+    &__empty {
+    }
+}
+
+.product-compare {
+    flex: 1 0 576px;
+    border-right: 1px solid $colorc2;
+    & > :not(:last-child) {
+        border-bottom: 1px solid $colorc2;
+    }
+    div {
+        @include adaptive-value("padding-left", 20, 6, 1);
+        @include adaptive-value("padding-right", 20, 6, 1);
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    // .product-compare__name
+
+    &__name {
+    }
+
+    // .product-compare__image
+
+    &__image {
+        img {
+            display: block;
+            margin: 0 auto;
+            @include adaptive-value("max-height", 137, 75, 1);
+        }
+    }
+
+    // .product-compare__price
+
+    &__price {
+    }
+
+    // .product-compare__manufacturer
+
+    &__manufacturer {
+    }
+
+    // .product-compare__stock
+
+    &__stock {
+    }
+
+    // .product-compare__date
+
+    &__date {
+    }
+
+    // .product-compare__platform
+
+    &__platform {
+    }
+
+    // .product-compare__version
+
+    &__version {
+    }
+
+    // .product-compare__screen
+
+    &__screen {
+    }
+
+    // .product-compare__opmemory
+
+    &__opmemory {
+    }
+
+    // .product-compare__mainmemory
+
+    &__mainmemory {
+    }
+
+    // .product-compare__maincamera
+
+    &__maincamera {
+    }
+
+    // .product-compare__maincamerapx
+
+    &__maincamerapx {
+    }
+
+    // .product-compare__maxvideopx
+
+    &__maxvideopx {
+    }
+
+    // .product-compare__cameramoduls
+
+    &__cameramoduls {
+    }
+
+    // .product-compare__cpumanufacotor
+
+    &__cpumanufacotor {
+    }
+
+    // .product-compare__cpu
+
+    &__cpu {
+    }
+
+    // .product-compare__height
+
+    &__height {
+    }
+
+    // .product-compare__width
+
+    &__width {
+    }
+
+    // .product-compare__thickness
+
+    &__thickness {
+    }
+
+    // .product-compare__weight
+
+    &__weight {
+    }
+
+    // .product-compare__еquipment
+
+    &__еquipment {
+    }
+
+    // .product-compare__warranty
+
+    &__warranty {
+    }
+
+    // .product-compare__empty
+
+    &__empty {
+    }
+}

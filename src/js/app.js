@@ -128,7 +128,32 @@ document.addEventListener('DOMContentLoaded', function (e) {
             })
         })
     }
+
 })
+
+function calcCompareListHeight() {
+    let compareProduct = document.querySelectorAll('.product-compare');
+    if (compareProduct) {
+        let compareParams = document.querySelectorAll('.aside-product div');
+        compareProduct.forEach(item => {
+            let compareList = item.querySelectorAll('div')
+            for (let i = 0; i < compareParams.length; i++) {
+                const param = compareParams[i];
+                const paramInfo = compareList[i];
+                let paramheight = param.getBoundingClientRect().height;
+                let paramInfoHeight = paramInfo.getBoundingClientRect().height;
+                let height = [paramheight, paramInfoHeight].sort((a, b) => b - a);
+                param.style.height = height[0] + 'px';
+                paramInfo.style.height = height[0] + 'px';
+            }
+        })
+    }
+}
+calcCompareListHeight();
+
+// window.addEventListener('resize', calcCompareListHeight);
+
+
 
 const arrow = `<svg class="open-submenu" width="18" height="10" viewBox="0 0 18 10" fill="none">
 <path d="M0.193859 0.364268C0.441921 0.116206 0.845022 0.116206 1.09308 0.364268L9.00006 8.28675L16.9225 0.364269C17.1706 0.116207 17.5737 0.116207 17.8218 0.364269C18.0698 0.612331 18.0698 1.01543 17.8218 1.26349L9.46518 9.62008C9.34115 9.74412 9.18611 9.80613 9.01556 9.80613C8.86053 9.80613 8.68998 9.74412 8.56595 9.62008L0.209364 1.26349C-0.0542031 1.01543 -0.0542031 0.61233 0.193859 0.364268Z"/>

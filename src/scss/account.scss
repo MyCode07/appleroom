@@ -1,0 +1,281 @@
+.account {
+    // .account__container
+
+    &__container {
+    }
+
+    // .account__body
+
+    &__body {
+    }
+
+    // .account__title
+
+    &__title {
+        margin: 70px 0 50px 0;
+    }
+
+    // .account__content
+
+    &__content {
+        background-color: #ffffff;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
+        border-radius: 5px;
+        padding-top: 38px;
+        padding-bottom: 38px;
+        @include adaptive-value("padding-left", 45, 12.5, 1);
+        @include adaptive-value("padding-right", 45, 12.5, 1);
+    }
+}
+
+.user {
+    & > :not(:last-child) {
+        @include adaptive-value("margin-bottom", 50, 30, 1);
+    }
+
+    // .user__actions
+
+    &__actions {
+        display: flex;
+        justify-content: space-between;
+
+        // .user__actions-info
+
+        &-info {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-right: 20px;
+                @include adaptive-value("width", 79, 57, 1);
+            }
+        }
+
+        // .user__actions-name
+
+        &-name {
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%;
+            color: $color2c;
+            @include adaptive-value("font-size", 18, 16, 1);
+            @include adaptive-value("margin-bottom", 8, 5, 1);
+
+            // .user__actions-name-change
+
+            &-change {
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%;
+                color: #8b8b8b;
+                @include adaptive-value("font-size", 14, 12, 1);
+            }
+        }
+    }
+
+    // .user__logout
+
+    &__logout {
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        color: $color2c;
+        @include adaptive-value("font-size", 14, 12, 1);
+    }
+
+    // .user__field
+
+    &__field {
+        // .user__field-title
+
+        &-title {
+            font-style: normal;
+            font-weight: 500;
+            @include adaptive-value("font-size", 20, 18, 1);
+            line-height: 130%;
+            @include adaptive-value("margin-bottom", 20, 15, 1);
+            color: $color2c;
+
+            span {
+                font-style: normal;
+                font-weight: 400;
+                @include adaptive-value("font-size", 14, 12, 1);
+                line-height: 130%;
+                color: #8b8b8b;
+                padding-left: 10px;
+            }
+        }
+
+        // .user__field-contacts
+
+        &-contacts {
+            display: flex;
+            & > :not(:last-child) {
+                margin-right: 20px;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: 400;
+                @include adaptive-value("font-size", 14, 12, 1);
+                line-height: 130%;
+                color: #8b8b8b;
+                margin-bottom: 13px;
+            }
+
+            span {
+                font-style: normal;
+                font-weight: 400;
+                @include adaptive-value("font-size", 14, 12, 1);
+                line-height: 130%;
+                color: $color2c;
+            }
+        }
+
+        // .user__field-phone
+
+        &-phone {
+        }
+
+        // .user__field-email
+
+        &-email {
+        }
+
+        // .user__field-cards
+
+        &-cards {
+            a {
+                font-style: normal;
+                font-weight: 400;
+                @include adaptive-value("font-size", 14, 12, 1);
+                line-height: 130%;
+                color: #8b8b8b;
+            }
+        }
+
+        // .user__field-cards
+
+        &-cards {
+        }
+
+        // .user__field-billing
+
+        &-billing {
+        }
+
+        // .user__field-cashback
+
+        &-cashback {
+        }
+    }
+}
+.billing {
+    display: flex;
+    & > :not(:last-child) {
+        @include adaptive-value("margin-right", 72, 0, 1);
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        & > :not(:last-child) {
+            margin-bottom: 15px;
+            margin-right: 0 !important;
+        }
+    }
+
+    // .billing__product
+
+    &__product {
+        // .billing__product-title
+
+        &-title {
+            font-style: normal;
+            font-weight: 400;
+            @include adaptive-value("font-size", 14, 12, 1);
+            line-height: 130%;
+            margin-bottom: 10px;
+            color: $color2c;
+        }
+
+        // .billing__product-price
+
+        &-price {
+            margin-bottom: 20px;
+            display: block;
+            ins {
+                font-style: normal;
+                font-weight: 400;
+                @include adaptive-value("font-size", 14, 12, 1);
+                line-height: 130%;
+                color: $color2c;
+                text-decoration: none;
+            }
+
+            del {
+                font-style: normal;
+                font-weight: 400;
+                @include adaptive-value("font-size", 14, 12, 1);
+                line-height: 130%;
+                color: #8b8b8b;
+                padding-left: 18px;
+            }
+        }
+
+        // .billing__product-payment
+
+        &-payment {
+            font-style: normal;
+            font-weight: 400;
+            @include adaptive-value("font-size", 14, 12, 1);
+            line-height: 130%;
+            color: $color2c;
+
+            label {
+                margin-bottom: 10px;
+                display: block;
+            }
+
+            input {
+                color: #8b8b8b;
+                margin-right: 10px;
+                width: fit-content;
+                max-width: 40px;
+            }
+        }
+    }
+}
+.cashback {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    // .cashback__procent
+
+    &__procent {
+        font-style: normal;
+        font-weight: 500;
+        @include adaptive-value("font-size", 24, 20, 1);
+        line-height: 130%;
+        color: $color93;
+        border-radius: 50%;
+        @include adaptive-value("flex-basis", 70, 58, 1);
+        flex-shrink: 0;
+        flex-grow: 0;
+        @include adaptive-value("height", 70, 58, 1);
+        background-color: #f2f2f2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include adaptive-value("margin-right", 20, 11, 1);
+    }
+
+    // .cashback__descr
+
+    &__descr {
+        font-style: normal;
+        font-weight: 400;
+        @include adaptive-value("font-size", 14, 12, 1);
+        line-height: 130%;
+        color: $color2c;
+    }
+}
